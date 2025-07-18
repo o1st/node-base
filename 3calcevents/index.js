@@ -34,6 +34,10 @@ eventEmitter.on('multiply', (num1, num2) => {
 });
 
 eventEmitter.on('divide', (num1, num2) => {
+  if (num2 === 0) {
+    console.log('Cannot divide by zero.');
+    return;
+  }
   console.log(divide(num1, num2));
 });
 

@@ -1,6 +1,6 @@
-const timerString = process.argv[2] || '0h:0m:0s';
+const timerString = process.argv[2] || '0h 0m 0s';
 
-const [h, m, s] = timerString.split(':').map(part => part.replace(/\D/g, ''));
+const [h, m, s] = timerString.split(' ').map(part => part.replace(/\D/g, ''));
 
 const timer = (h, m, s) => {
   const totalSeconds = (parseInt(h) || 0) * 3600 + (parseInt(m) || 0) * 60 + (parseInt(s) || 0);
@@ -10,8 +10,6 @@ const timer = (h, m, s) => {
   }
 
   let remainingSeconds = totalSeconds;
-
-  console.log(remainingSeconds)
 
   const interval = setInterval(() => {
     if (remainingSeconds <= 0) {

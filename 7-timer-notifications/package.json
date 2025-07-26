@@ -1,0 +1,27 @@
+{
+  "name": "timer-notifications",
+  "version": "1.0.0",
+  "description": "Timer with notifications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/o1st/node-base.git"
+  },
+  "keywords": [
+    "timer",
+    "node",
+    "notifications"
+  ],
+  "author": "Ostap Fedchenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/o1st/node-base/issues"
+  },
+  "homepage": "https://github.com/o1st/node-base#readme",
+  "dependencies": {
+    "node-notifier": "^10.0.1"
+  }
+}
